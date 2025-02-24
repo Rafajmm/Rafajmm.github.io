@@ -1,0 +1,38 @@
+body{
+    background-color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+    text-align: center;    
+}
+
+h1{
+    margin: 2% 0;
+    color: rgb(119, 72, 138);
+    font-size: 40px;
+    letter-spacing:15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p{
+    float: inline-start;
+    width: 200px;
+    height: 200px;
+    overflow:auto;
+    border: dotted;
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(13, 114, 114);
+    font-size:medium ;
+    font-style: oblique;
+}
+
+p::first-letter{
+    float: inline-start;
+    color: black;
+    font-size: 50px;
+    font-style: oblique;
+    line-height: 0.8;
+}
