@@ -61,3 +61,12 @@ p strong{
 iframe{
     border-radius: 8px;
 }
+
+#mapa{
+    width: 500px;
+}
+
+#mapa:hover{
+    transform: scale(1.55);
+    transition: transform 0.3s ease;
+}
