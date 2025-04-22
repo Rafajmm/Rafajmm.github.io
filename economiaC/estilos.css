@@ -23,21 +23,19 @@ h1 {
 }
 
 p {
-    background-color: #2E86C1;
-    border: 1px solid #1B4F72;
     border-radius: 8px;
     padding: 15px;  
     height: auto; 
     overflow: auto; 
     font-size: 16px;
-    color: #FDFEFE;
+    color: #000000;
     box-sizing: border-box; 
 }
 
 p strong {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
-    color: #F4D03F;
+    color: #154360;
 }
 nav{
     display: flex;
@@ -59,61 +57,230 @@ nav a{
 
 }
 .grid-contenido {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap:20px;
-    width: 85%;
-    height: auto;
-    margin: 0 auto;
-    padding: 20px;
-  }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:20px;
+  width: 85%;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-  .grid-contenido section {
-    background-color: #f5f5f5;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-   
-  }
+.grid-contenido section {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  
+}
 
-  .grid-contenido h2 {
-    color: #154360;
-    margin-top: 0;
-  }
+.grid-contenido h2 {
+  color: #154360;
+  margin-top: 0;
+}
 
-  @media (max-width: 480px) {
-    .grid-contenido {
-        width: 100%;
-        grid-template-columns: 1fr;
+.imgCuerpo{
+  float: left;
+  width: 15%;
+}
+.img1{
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  padding: 5px;
+  text-align: left;
+}
+
+.circular {
+  background-color: #e6f7e6;
+}
+
+.lineal {
+  background-color: #ffe6e6;
+}
+
+th {
+  background-color: #154360;
+  color: white;
+}
+
+iframe{
+  border-radius: 5px;
+  width: 100%;
+  height: 50%;
+}
+
+.consumismoCont {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.consumismo {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.consumismo h3 {
+  color: #154360;
+  border-bottom: 2px solid #e8f8f5;
+  padding-bottom: 8px;
+  margin-top: 0;
+}
+
+.pdf {
+  text-align: center;
+}
+
+.pdfCont {
+  border: 2px dashed #154360;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  margin: 15px 0;
+}
+
+.pdfButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #154360;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.pdfButton:hover {
+  background-color: #1a5276;
+}
+
+.economiaCont {
+  display: grid;
+  gap: 25px;
+}
+
+.comparativa {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+
+.comparativa th {
+  background-color: #154360;
+  color: white;
+  text-align: center;
+}
+
+.comparativa td {
+  padding: 5px;
+  border: 1px solid #ddd;
+}
+
+.verde {
+  background-color: #e6f7e6;
+}
+
+.lineal {
+  background-color: #ffe6e6;
+}
+
+.beneficiosLista {
+  padding: 5px;
+  list-style-type: none;
+}
+
+.beneficiosLista li {
+  padding: 8px 0;
+  position: relative;
+  padding-left: 30px;
+}
+
+.cicloVida {
+  display: grid;
+}
+
+.fasesTabla {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.fasesTabla th {
+  background-color: #154360;
+  color: white;
+  padding: 5px;
+  text-align: left;
+}
+
+.fasesTabla td {
+  padding: 5px;
+  border: 1px solid #ddd;
+  vertical-align: top;
+}
+
+.impactoAlto {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.impactoMedio {
+  background-color: #fff8e1;
+  color: #f57f17;
+}
+
+.mejora {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+
+@media (max-width: 480px) {
+  .grid-contenido {
+      width: 80%;
+      grid-template-columns: 1fr;
+    
+  }
+  nav{
+      text-align: center;    
+      position:relative;
+      width: 50px;
+      background-color:#f5f5f5;
       
-    }
-    nav{
-        text-align: center;    
-        position:relative;
-        width: 50px;
-        background-color:#f5f5f5;
-       
-    }
-    
-    
-    
-    nav a{
-        text-decoration:none;
-        color:inherit;
-        font-size:12px;
-        
-    }                                                    
-  }
+}
+  
+  
+  
+  nav a{
+      text-decoration:none;
+      color:inherit;
+      font-size:12px;
+      
+  }                                                    
+}
 
-  @media (max-width: 900px) {
-    .grid-contenido {
-      grid-template-columns: repeat(1, 1fr);
-    }
+@media (max-width: 900px) {
+  .grid-contenido {
+    grid-template-columns: repeat(1, 1fr);
   }
+}
 
-  footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #154360;
-    color: white;
-  }
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #154360;
+  color: white;
+}
